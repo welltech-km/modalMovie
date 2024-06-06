@@ -39,6 +39,12 @@ body {
     cursor: pointer;
 }
 
+.banner-wrapper{
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -60,19 +66,4 @@ body {
 
 .green{
     border-color: green;
-}
-
-.aa{
-    width: 500px;
-    padding: 10px 20px;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid red;
-    margin: auto;
-    transition: .3s;
-}
-
-.aa:hover{
-    transform: scale(.97);
-    transition: .3s;
 }
