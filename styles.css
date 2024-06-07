@@ -26,24 +26,48 @@ body {
     background: transparent;
     transition:.3s;
     display: none;
+    cursor:pointer;
 }
 
-.overlay:hover{
-    transition:.3s;
-    transform: scale(.98);
+.overlay-bg{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 375px;
+    height: 250px;
+    background: transparent;
+    display: none;
+    opacity: 0;
+    transition: .4s;
 }
 
 .banner iframe {
     width: 100%;
     height: 100%;
     cursor: pointer;
+    border-radius: 10px;
 }
 
-.banner-wrapper{
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
+.player-close {
+    position: absolute;
+    top: -22px;
+    right: -15px;
+    background: #eee;
+    font-size: 27px;
+    padding: 5px 13px;
+    border-radius: 100px;
+    z-index: 3000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+
+.modal {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
 }
 
 
